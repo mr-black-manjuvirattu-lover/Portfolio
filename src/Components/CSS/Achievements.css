@@ -1,0 +1,17 @@
+.Achievements-container{
+    background-color: darkgray;
+    text-align: center;
+}
+.Achievements-container h1{
+    padding: 10px;
+}
+.Achievements-container li{
+    list-style: none;
+}
+.Achievement{
+    background-color: rgb(211, 233, 173);
+    height: 200px;
+    padding: 55px;
+    border-radius: 20px;
+    border: solid salmon;
+}
