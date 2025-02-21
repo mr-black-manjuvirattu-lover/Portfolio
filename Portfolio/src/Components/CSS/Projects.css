@@ -1,0 +1,15 @@
+.Projects-container{
+    background-color: cadetblue;
+    height: 1000px;
+    position: absolute;
+}
+.Projects-container h1{
+    text-align: center;
+}
+.Project-Container{
+    background-color: rgb(184, 181, 181);
+    padding: 6px;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+}
