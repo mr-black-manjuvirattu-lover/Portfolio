@@ -4,6 +4,7 @@ import './CSS/NavBar.css'
 const NavBar = () => {
   return (
     <header>
+      <h1>Karuppusamy-S Portfolio</h1>
         <nav>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/projects'>Projects</Link></li>

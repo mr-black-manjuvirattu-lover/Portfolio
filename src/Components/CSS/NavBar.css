@@ -1,14 +1,25 @@
+header{
+    top: 0;
+    display: flex;
+    background-color: rgb(95, 197, 201);
+    border: solid 10px rgb(219, 203, 136);
+    justify-content: space-between;
+    padding: 10px;
+}
 nav{
     display: flex;
-    background-color: rgb(251, 242, 111);
+    background-color: rgb(126, 170, 204);
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
 }
 nav li{
     list-style: none;
-    justify-content: space-between;
     width: 100%;
     font-size: medium ;
     font-weight: bold;
     padding: 20px;
+    text-align: center;
     
 }
 nav li:hover{
@@ -17,4 +28,5 @@ nav li:hover{
 }
 nav a{
     text-decoration: none;
+    justify-content: center;
 }
