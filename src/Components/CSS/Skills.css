@@ -1,16 +1,46 @@
-.Skills-container{
-    background-color: cadetblue;
-    height: 600px;
+.Skills-container {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 600px;
     width: 100%;
-    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+    
 }
-.Skill-container{
-    background-color: rgb(184, 181, 181);
+
+.Skill-container, .Tools-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Skill-container:hover, .Tools-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.Skill-container ul, .Tools-container ul {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    border-radius: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0;
 }
-.Skill-container li{
-    padding: 30px;
+
+.Skill-container li, .Tools-container li {
     list-style: none;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.Skill-container li:hover, .Tools-container li:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
 }
