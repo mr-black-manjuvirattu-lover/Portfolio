@@ -44,9 +44,61 @@
     margin: 8px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .Achievements-container {
+        padding: 30px 15px;
+    }
+
     .Achievement {
+        max-width: 80%;
         padding: 20px;
-        max-width: 90%;
+        margin: 15px auto;
+    }
+
+    .Achievement h1 {
+        font-size: 1.3rem;
+    }
+
+    .Achievement li {
+        font-size: 0.95rem;
     }
 }
+
+@media (max-width: 768px) {
+    .Achievements-container {
+        padding: 25px 10px;
+    }
+
+    .Achievement {
+        max-width: 90%;
+        padding: 18px;
+    }
+
+    .Achievement h1 {
+        font-size: 1.2rem;
+    }
+
+    .Achievement li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Achievements-container {
+        padding: 20px 5px;
+    }
+
+    .Achievement {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .Achievement h1 {
+        font-size: 1.1rem;
+    }
+
+    .Achievement li {
+        font-size: 0.85rem;
+    }
+}
+

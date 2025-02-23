@@ -13,13 +13,13 @@ const projects = [
     title: "Student Feedback Sentiment Analysis",
     link: "#",
     description:
-      "Uses NLP techniques to analyze student feedback and provide sentiment analysis.",
+      "A sentiment analysis project developed using UiPath and AI Center to analyze student feedback, summarize reviews, and provide an overall sentiment score.",
   },
   {
     title: "Automated Temperature Retrieval and Recording",
     link: "#",
     description:
-      "Automates temperature data retrieval from IoT devices and logs it for analysis.",
+      "An automation system that retrieves real-time temperature data, records it systematically, and analyzes trends using UiPath and data processing tools.",
   },
   {
     title: "Translator Using UiPath",
@@ -28,11 +28,11 @@ const projects = [
       "An automated translation tool leveraging UiPath's capabilities for multilingual support.",
   },
   {
-    title: "Students Details Filter",
+    title: "Philipss Gallery",
     link: "#",
     description:
-      "Filters and categorizes student data efficiently based on various parameters.",
-  },
+      "A web-based image gallery where users can upload images, which are then stored in Cloudinary. The images are displayed in a grid view for easy browsing and retrieval.",
+  }
 ];
 
 const Projects = () => {
