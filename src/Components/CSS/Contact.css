@@ -49,6 +49,16 @@
 
 @media (max-width: 768px) {
     .contact-grid {
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
+        gap: 20px; 
+        padding: 20px;
+    }
+
+    .contact-container h1 {
+        font-size: 2rem;
+    }
+
+    .contact-grid a {
+        width: 100%;
     }
 }

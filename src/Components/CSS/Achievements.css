@@ -72,6 +72,7 @@
     .Achievement {
         max-width: 90%;
         padding: 18px;
+        margin-bottom: 15px;
     }
 
     .Achievement h1 {
@@ -101,4 +102,3 @@
         font-size: 0.85rem;
     }
 }
-
