@@ -1,15 +1,25 @@
 .Home-container {
+  width: 100%;
   background: linear-gradient(to right, #2c3e50, #34495e);
   min-height: 100vh;
   padding: 50px;
   text-align: center;
   color: white;
   position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.Profile-container {
-  text-align: center;
-  margin-bottom: 30px;
+.Profile-container, .About-container {
+  min-height: 40vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
 .Profile-img {
@@ -74,65 +84,23 @@ h4, h6 {
 }
 
 @media (max-width: 1024px) {
-  .Home-container {
-      padding: 30px 20px;
-  }
-
-  .Profile-img {
-      width: 130px;
-      height: 130px;
-  }
-
-  h1 {
-      font-size: 1.8rem;
-  }
-
-  .About-container {
-      width: 90%;
-      padding: 18px;
+  .Profile-container, .About-container {
+      min-height: 35vh;
+      width: 60%;
   }
 }
 
 @media (max-width: 768px) {
-  .Profile-img {
-      width: 120px;
-      height: 120px;
-  }
-
-  h1 {
-      font-size: 1.6rem;
-  }
-
-  .About-container {
-      width: 95%;
-      padding: 16px;
-  }
-
-  .resume-button {
-      bottom: 15px;
-      right: 15px;
-      font-size: 0.9rem;
+  .Profile-container, .About-container {
+      min-height: 30vh;
+      width: 60%;
   }
 }
 
 @media (max-width: 480px) {
-  .Profile-img {
-      width: 100px;
-      height: 100px;
-  }
-
-  h1 {
-      font-size: 1.4rem;
-  }
-
-  .About-container {
-      width: 95%;
-      padding: 14px;
-  }
-
-  .resume-button {
-      bottom: 10px;
-      right: 10px;
-      font-size: 0.85rem;
+  .Profile-container, .About-container {
+      min-height: 25vh;
+      width: 60%;
   }
 }
+
