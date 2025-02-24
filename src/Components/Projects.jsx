@@ -23,13 +23,13 @@ const projects = [
   },
   {
     title: "Translator Using UiPath",
-    link: "#",
+    link: "https://github.com/mr-black-manjuvirattu-lover/Projects",
     description:
       "An automated translation tool leveraging UiPath's capabilities for multilingual support.",
   },
   {
     title: "Philipss Gallery",
-    link: "#",
+    link: "https://philipss-gallery.vercel.app/",
     description:
       "A web-based image gallery where users can upload images, which are then stored in Cloudinary. The images are displayed in a grid view for easy browsing and retrieval.",
   }

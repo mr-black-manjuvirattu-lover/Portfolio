@@ -16,7 +16,7 @@ const Home = () => {
       >
         <img src={profilePic} alt="Profile" className="Profile-img" />
         <h1>Karuppusamy Sivanandam</h1>
-        <p>Computer Science Engineering Student | Automation & Development Enthusiast</p>
+        <p>Computer Science and Engineering Student | Pre-Final Year | Automation & Development Enthusiast</p>
       </motion.div>
 
       {}

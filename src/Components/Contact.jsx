@@ -9,8 +9,8 @@ import facebookIcon from "../assets/Images/facebook.png";
 import instagramIcon from "../assets/Images/instagram.png";
 
 const contacts = [
-  { img: emailIcon, text: "Email : karuppusamysivanandam@gmail.com" },
-  { img: whatsappIcon, text: "Whatsapp : +91 8754099736" },
+  { img: emailIcon, text: "karuppusamysivanandam@gmail.com" },
+  { img: whatsappIcon, text: "+91 8754099736" },
   { img: linkedinIcon, text: "LinkedIn", link: "https://www.linkedin.com/in/karuppusamy-s-33077825a/" },
   { img: githubIcon, text: "GitHub", link: "https://github.com/mr-black-manjuvirattu-lover/" },
   { img: facebookIcon, text: "FaceBook", link: "https://www.facebook.com/share/167R6Mbaom/" },

@@ -1,12 +1,23 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import './CSS/NavBar.css';
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+import "./CSS/NavBar.css";
 
 const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header>
       <h1>Karuppusamy-S Portfolio</h1>
-      <nav>
+
+      <div className="menu-btn" onClick={toggleMenu}>
+        ☰
+      </div>
+
+      <nav className={menuOpen ? "nav-open" : ""}>
         <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
         <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
         <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
@@ -15,6 +26,6 @@ const NavBar = () => {
       </nav>
     </header>
   );
-}
+};
 
 export default NavBar;
