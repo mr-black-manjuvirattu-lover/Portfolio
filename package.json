@@ -9,6 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "author": "Mr-Black",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "framer-motion": "^12.4.7",
     "i": "^0.3.7",

@@ -65,10 +65,6 @@
 }
 
 @media (max-width: 768px) {
-    .Skills-container {
-        padding: 30px 20px;
-    }
-
     .Skill-container, .Tools-container {
         width: 70%;
     }
@@ -83,10 +79,7 @@
 }
 
 @media (max-width: 480px) {
-    .Skills-container {
-        padding: 20px;
-    }
-
+    
     .Skill-container, .Tools-container {
         padding: 15px;
     }
