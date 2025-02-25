@@ -2,9 +2,10 @@
     height: 100%;
     width: 100%;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
-    padding: 10px 0 10px 0;
+    padding: 50px 0 10px 0;
     text-align: center;
     color: white;
+    min-height: 90vh;
 }
 
 .contact-container h1 {

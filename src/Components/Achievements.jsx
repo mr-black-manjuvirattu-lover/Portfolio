@@ -1,17 +1,25 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import "./CSS/Achievements.css";
 
 const Achievements = () => {
-  return (
-    <div className="Achievements-container">
-      <h1>Achievements</h1>
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
 
-      {}
+  return (
+    <div ref={ref} className="Achievements-container">
+      <motion.h1
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 1 }}
+      >
+        Achievements
+      </motion.h1>
+
       <motion.div
         className="Achievement"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
         <h1>IEEE Yesist12 2024</h1>
@@ -24,11 +32,10 @@ const Achievements = () => {
         </ul>
       </motion.div>
 
-      {}
       <motion.div
         className="Achievement"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1, delay: 0.3 }}
       >
         <h1>Hack-A-Bot 2024</h1>

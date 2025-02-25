@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import "./CSS/Projects.css";
 
 const projects = [
@@ -36,13 +36,16 @@ const projects = [
 ];
 
 const Projects = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
+
   return (
-    <div className="Projects-container">
+    <div ref={ref} className="Projects-container">
       <h1>Projects</h1>
       <motion.div
         className="Projects-grid"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
       >
         {projects.map((project, index) => (
@@ -50,7 +53,7 @@ const Projects = () => {
             key={index}
             className="Project-Container"
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             whileHover={{ scale: 1.05 }}
           >

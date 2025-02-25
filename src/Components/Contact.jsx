@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import "./CSS/Contact.css";
 import emailIcon from "../assets/Images/communication.png";
 import whatsappIcon from "../assets/Images/whatsapp.png";
@@ -18,15 +18,20 @@ const contacts = [
 ];
 
 const Contact = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
+
   return (
-    <div className="contact-container">
-      <h1>Contact</h1>
-      <motion.div
-        className="contact-grid"
+    <div ref={ref} className="contact-container">
+      <motion.h1
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
       >
+        Contact
+      </motion.h1>
+
+      <motion.div className="contact-grid">
         {contacts.map((contact, index) => (
           <motion.a
             key={index}
@@ -34,7 +39,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <img src={contact.img} alt={contact.text} />

@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    min-height: 90vh;
     padding: 40px 0;
 }
 
@@ -79,7 +80,7 @@
 }
 
 @media (max-width: 480px) {
-    
+
     .Skill-container, .Tools-container {
         padding: 15px;
     }

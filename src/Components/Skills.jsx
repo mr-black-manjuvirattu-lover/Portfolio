@@ -1,15 +1,17 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import "./CSS/Skills.css";
 
 const Skills = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
+
   return (
-    <div className="Skills-container">
-      {}
+    <div ref={ref} className="Skills-container">
       <motion.div
         className="Skill-container"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
         <h1>Skills</h1>
@@ -25,11 +27,10 @@ const Skills = () => {
         </ul>
       </motion.div>
 
-      {}
       <motion.div
         className="Tools-container"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1, delay: 0.3 }}
       >
         <h1>Tools</h1>
